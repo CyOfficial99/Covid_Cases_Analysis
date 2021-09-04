@@ -3,7 +3,7 @@ FROM PortfolioProject..['CovidDeath']
 WHERE Continent is not Null
 ORDER BY 1,2
 
--- Shows likelihood of dying if I contracted in my country
+-- Shows likelihood of dying if I contracted in Malaysia
 SELECT Location, Date, Total_Cases, total_deaths, (Total_deaths/total_cases)*100 as DeathPercentage
 FROM PortfolioProject..['CovidDeath']
 WHERE location like '%Malaysia%'
